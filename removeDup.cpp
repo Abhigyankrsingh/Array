@@ -4,21 +4,36 @@ using namespace std;
 
 
 
+// int remv(int arr[], int n){
+
+//     int temp[n];
+
+//     temp[0] = arr[0];
+//      int res = 1;
+//     for(int i =0; i<n;i++){
+      
+//       if(temp[res-1] != arr[i]){
+//          temp[res] = arr[i];
+//          res++;
+//       }
+//     }
+
+//     return res;
+// }
+
+
+
 int remv(int arr[], int n){
 
-    int temp[n];
+    int res = 1;
 
-    temp[0] = arr[0];
-     int res = 1;
-    for(int i =0; i<n;i++){
-      
-      if(temp[res-1] != arr[i]){
-         temp[res] = arr[i];
-         res++;
-      }
+    for(int i =0; i<n; i++){
+        if(arr[i] != arr[res-1]){
+            arr[res] = arr[i];
+            res++;
+        }
     }
-
-    return res;
+    return res++;
 }
 
 int main(){
