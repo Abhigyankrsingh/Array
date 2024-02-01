@@ -3,10 +3,16 @@
 using namespace std;
 
 
+  void swapnU(int &a, int &b){
+    int temp = a;
+    a = b;
+    b = temp; 
+  }
+
   void printa (int arr[], int n){
 
     for(int i =0; i<n; i++){
-        cout<< arr[i];
+        cout<< arr[i] << " ";
     }
   }
 
@@ -15,7 +21,7 @@ using namespace std;
     
 
     for(int i =0; i <size; i+=2){
-        swap(arr[i], arr[i +1]);
+        swapnU(arr[i], arr[i +1]);
     }
   }
 
