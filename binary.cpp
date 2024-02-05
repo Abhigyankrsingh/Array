@@ -9,13 +9,16 @@ int binarySearch(int arr [], int size, int key){
 
  int end =  size -1;
 
- int mid = start + (end - start/2);
+ 
 
 
  if ( start <=  end){
 
+    int mid = start + (end - start/2);
+
     if( arr[mid] == key){
         cout << "Key is found" << arr[mid] << endl;
+        return mid;
     
     }
 
