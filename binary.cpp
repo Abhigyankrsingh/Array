@@ -33,10 +33,32 @@ int binarySearch(int arr [], int size, int key){
 
  }
 
+  return -1;
+
 
 }
 
 int main(){
+
+  int n;
+
+  cin >> n;
+
+
+  int k ;
+
+  cin >>k;
+
+  int arr[n] ;
+
+  for(int i =0; i <n; i++){
+     cin >>arr[i];
+  }
+
+
+   cout << "Index is at" << binarySearch(arr, n, k);
+
+
 
 
 
