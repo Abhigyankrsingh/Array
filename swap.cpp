@@ -17,6 +17,8 @@ void swapAlt(int arr[], int size){
 
     if(i+1 < size){
       swap(arr[i+1], arr[i]);
+    } else {
+      cout <<" -1" << endl;
     }
   }
 }
@@ -39,6 +41,8 @@ int main(){
 
     cin >> arr[i];
   }
+
+  swapAlt(arr, n);
 
  printArr(arr, n);
    
