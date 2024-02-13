@@ -11,12 +11,20 @@ void printArr(int arr[], int n){
 }
 
 
+ void swapNu(int &a, int &b){
+
+  int temp = a;
+  a = b;
+  b = temp;
+ }
+
+
 void swapAlt(int arr[], int size){
 
   for(int i =0; i < size; i+=2){
 
     if(i+1 < size){
-      swap(arr[i+1], arr[i]);
+      swapNu(arr[i+1], arr[i]);
     } else {
       cout <<" -1" << endl;
     }
