@@ -37,7 +37,7 @@ int main(){
 
     int n;
 
-    cout << "Enter a number: ";
+    cout << "Enter a num: ";
     cin >> n;
 
     int digit = digitCount(n);
