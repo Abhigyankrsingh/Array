@@ -20,7 +20,7 @@ int binarySearch(int arr[], int size, int key) {
         }
     }
 
-    cout << "Key not found" << endl;
+    cout << "not found" << endl;
     return -1;
 }
 
