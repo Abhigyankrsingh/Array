@@ -14,7 +14,7 @@ void binar(vector<int> &arr, int n, int target){
         if(arr[mid] == target){
             cout << " Target found at " << mid  << " index"<<endl;
             return;
-        } else if (arr[mid] > target){
+        } else if (arr[mid] < target){
             start = mid + 1;
         } else {
              end = mid -1;
@@ -40,9 +40,8 @@ int main(){
         cin >> arr[i];
     }
 
-    binar(arr,n, target);
+   
 
-   for(int i =0; i<n;i++){
-    cout << arr[i];
-   }   
+    
+    binar(arr,n, target);
 }
